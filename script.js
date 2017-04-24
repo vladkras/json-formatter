@@ -9,16 +9,14 @@ function Process() {
     canvas.setAttribute('class', 'Canvas');
     $id("raw-json").parentNode.insertBefore(canvas, $id("raw-json"));
 
-    var html = "";
     try{
         if(json == "") json = "\"\"";
         var obj = eval("["+json+"]");
-        html = ProcessObject(obj[0], 0, false, false, false);
+        var html = ProcessObject(obj[0], 0, false, false, false);
         $id("raw-json").style.display = 'none';
-        $id("Canvas").innerHTML = "<pre class='CodeContainer'>"+html+"</pre>";
+        canvas.innerHTML = "<pre>"+html+"</pre>";
     }catch(e){
         alert("JSON is not well formated:\n"+e.message);
-        $id("Canvas").innerHTML = "";
     }
 }
 window._dateObj = new Date();
@@ -138,4 +136,3 @@ function ExpClicked(sign){
     container.style.display = disp;
 
 }
-
