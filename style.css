@@ -1,0 +1,14 @@
+.MainArr { color: #000; font-weight: bold; }
+.ObjectBrace { color:#00AA00; font-weight:bold; }
+.ArrayBrace { color:#0033FF; font-weight:bold; }
+.PropertyName { color:#CC0000; font-weight:bold; }
+.String { color:#007777; }
+.Number { color:#AA00AA; }
+.Boolean { color:#0000FF; }
+.Function { color:#AA6633; text-decoration:italic; }
+.Null { color:#0000FF; }
+.Comma { color:#000000; font-weight:bold; }
+#TabSizeHolder{ padding-left:10px; padding-right:10px; }
+#HeaderTitle { text-align:right; font-size:11px; }
+#HeaderSubTitle { margin-bottom:2px; margin-top:0px }
+.glyphicon { cursor: pointer; color: #999; font-size:11px; }
